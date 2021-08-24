@@ -1,0 +1,62 @@
+.card_festival,
+.card_article,
+.card_product {
+    // aspect-ratio: 5/7;
+    // overflow: hidden;
+    // transition: all .5s;
+    // transition: all .5s ease-in-out 0.2s;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+
+    .text-h6 {
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    .text-caption {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .q-img {
+        aspect-ratio: 3/2;
+    }
+
+    .q-img__image {
+        transition: all .3s;
+    }
+
+    &:hover {
+        // transform: scale(1.11);
+        .q-img__image {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.q-dialog {
+    .q-card {
+        width: 75vw;
+    }
+    @media (min-width: $sm-breakpoint) {
+        .q-card {
+            width: 60vw;
+        }
+    }
+    @media (min-width: $sm-breakpoint) {
+        .q-card {
+            width: 50vw;
+        }
+    }
+    @media (min-width: $md-breakpoint) {
+        .q-card {
+            width: 40vw;
+        }
+    }
+}

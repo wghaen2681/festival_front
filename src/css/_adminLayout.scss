@@ -1,0 +1,38 @@
+#adminLayout {
+  #header_mobile {
+    display: block;
+    background: #333;
+  }
+
+  #drawer_desktop {
+    display: none;
+
+    .q-drawer__content {
+      background: #333;
+
+      .q-btn {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  @media (max-height: 600px) {
+    .q-page-container {
+      padding-left: 0 !important;
+    }
+  }
+
+  @media (min-width: 1000px) and (min-height: 600px) {
+    #header_mobile {
+      display: none;
+    }
+
+    #drawer_mobile {
+      display: none;
+    }
+
+    #drawer_desktop {
+      display: block;
+    }
+  }
+}

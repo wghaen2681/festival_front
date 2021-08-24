@@ -1,0 +1,49 @@
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto
+}
+
+// @media (min-width: $xs-breakpoint) {
+//   .container,
+//   .container-sm {
+//     width: 85%;
+//   }
+// }
+
+// @media (min-width: $sm-breakpoint) {
+//   .container,
+//   .container-sm,
+//   .container-md {
+//     width: 80%;
+//     // max-width: 920px
+//   }
+// }
+
+
+@media (min-width: $md-breakpoint) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    width: 75%;
+    // max-width: 1140px
+  }
+}
+
+
+@media (min-width: $lg-breakpoint) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    width: 70%;
+    // max-width: 1440px
+  }
+}
+

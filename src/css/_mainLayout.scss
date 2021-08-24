@@ -1,0 +1,108 @@
+#mainLayout {
+  #drawer_mobile {
+    display: block;
+
+    // aside {
+    //   background-color: darkorange;
+
+    //   .q-drawer__content {
+    //     color: white;
+    //   }
+
+    //   .q-router-link--active {
+    //     color: #333;
+    //   }
+    // }
+  }
+
+  #drawer_desktop {
+    display: none;
+
+    // aside {
+    //   background-color: darkorange;
+
+    //   .q-drawer__content {
+    //     color: white;
+    //   }
+
+    //   .q-router-link--active {
+    //     color: #333;
+    //   }
+    // }
+  }
+
+  #page_container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .q-drawer-container {
+    .q-item__section--avatar {
+      align-items: center;
+    }
+
+    .q-list {
+      min-width: 100px;
+      font-size: 1rem;
+
+      .q-item {
+          padding: 15px 30px !important;
+      }
+    }
+  }
+
+  #btn_register,
+  #btn_login,
+  #btn_logout,
+  #btn_shopping_cart,
+  #btn_order,
+  #btn_account_circle,
+  #btn_manage_accounts {
+    display: none;
+  }
+
+  #footer {
+    width: 100vw;
+    height: 50px;
+    background: black;
+  }
+
+  @media (max-width: 768px){
+    #page_container {
+        padding-left: 0 !important;
+    }
+  }
+
+  @media (min-width: 768px){
+    #drawer_mobile {
+        display: none;
+    }
+
+    #drawer_desktop {
+        display: block;
+    }
+    
+    #logo {
+        text-align: left;
+    }
+
+    #btn_app {
+        display: none;
+    }
+
+    q-menu {
+        display: none;
+    }
+
+    #btn_register,
+    #btn_login,
+    #btn_logout,
+    #btn_shopping_cart,
+    #btn_order,
+    #btn_account_circle,
+    #btn_manage_accounts {
+      display: inline-flex;
+    }
+  }
+}

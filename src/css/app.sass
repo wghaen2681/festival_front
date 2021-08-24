@@ -1,0 +1,28 @@
+// app global css in Sass form
+
+// breakpoint variable, from https://quasar.dev/style/breakpoints
+// Except the xs one because I think 600px is too small
+$xs-breakpoint: 540px
+$sm-breakpoint: 920px
+$md-breakpoint: 1140px
+$lg-breakpoint: 1440px
+
+// 引用自定義 quasar 未提供的 .container 樣式
+@import './container'
+
+// 引用 layout 樣式
+@import './mainLayout'
+@import './adminLayout'
+
+// 引用分頁樣式
+@import './home'
+@import './article'
+@import './about'
+@import './cart'
+@import './seasons'
+
+// 引用元件樣式
+@import './component'
+
+body
+  font-family: 'Noto Sans TC', sans-serif
