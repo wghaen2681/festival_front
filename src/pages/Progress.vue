@@ -1,7 +1,7 @@
 <template lang="pug">
 q-page.container
   h4.text-center 進行中
-  .row.q-mb-xl
+  .row.q-mb-xl(style="margin-left: -24px; margin-right: -24px;")
     .col-12.col-sm-6.col-md-4(v-for="festival in festivals" :key="festival._id")
       router-link(:to="'/festival/'+festival._id" style="text-decoration: none;")
         CardFestival(:festival="festival")

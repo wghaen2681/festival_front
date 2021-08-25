@@ -1,7 +1,7 @@
 <template lang="pug">
 .container
   h4.text-center 商店
-  .row.q-mb-xl
+  .row.q-mb-xl(style="margin-left: -24px; margin-right: -24px;")
     .col-12.col-sm-6.col-md-4(v-for="product in products" :key="product._id")
       router-link(:to="'/product/'+product._id" style="text-decoration: none;")
         CardProduct(:product="product")
