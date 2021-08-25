@@ -46,7 +46,7 @@ export default {
   methods: {
     async getUserDetail (evt, row, index) {
       try {
-        const { data } = await api.get('/users/' + this.users[index]._id)
+        const { data } = await api.get('/users/id/' + this.users[index]._id)
         console.log(data.result)
         if (data.result.role === 0) {
           data.result.role = { label: '使用者', value: 0 }
