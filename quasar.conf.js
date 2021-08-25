@@ -73,7 +73,7 @@ module.exports = function (ctx) {
       env: {
         VUE_APP_API: ctx.dev
           ? 'http://localhost:3000'
-          : 'https://festivalsweb.herokuapp.com/'
+          : 'https://festivalsweb.herokuapp.com'
       },
 
       // https://v1.quasar.dev/quasar-cli/handling-webpack

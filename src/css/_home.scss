@@ -5,11 +5,6 @@
     transform: translateX(-50%);
     width: 107vw;
     height: 400px;
-    // 問題：怎麼為背景圖片加上濾鏡
-    // background: rgba(0, 0, 0, 0.1);
-    // background 縮寫：位置(x, y) / 縮放(x, y)
     background: url('../assets/home_background_1.png') no-repeat center 58%/cover;
-    // background: rgba(0, 0, 0, 0.1), url('../assets/home_background_1.png') center center/cover;
-    // background: rgba(0, 0, 0, 0.1), url('../assets/home_background_1.png') center center/cover no-repeat;
   }
 }
