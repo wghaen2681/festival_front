@@ -15,8 +15,8 @@
               q-select.q-mr-sm(borderless v-model="amount" :options="options.amount" label="數量" style="width: 80px;")
           .col
             .row(style="min-width: 210px;")
-              q-btn.q-mr-sm(flat style="border: 1px solid black; height: 2rem" @click="addcart") 加入購物車
-              q-btn.q-mr-sm(flat style="border: 1px solid black; height: 2rem" @click="checkout") 立即購買
+              q-btn.q-mr-sm(outline text-color="primary" @click="addcart") 加入購物車
+              q-btn.q-mr-sm(outline text-color="deep-orange-13" @click="checkout") 立即購買
     hr
     .row
       h5.col.q-mx-lg 其他商品
