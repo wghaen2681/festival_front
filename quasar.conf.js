@@ -90,7 +90,7 @@ module.exports = function (ctx) {
           .use('pug-plain-loader')
           .loader('pug-plain-loader')
       },
-      publicPath: './festival_front2'
+      publicPath: './festival_front'
     },
 
     // Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
